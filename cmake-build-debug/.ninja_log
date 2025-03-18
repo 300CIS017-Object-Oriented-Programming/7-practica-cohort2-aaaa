@@ -1,0 +1,14 @@
+# ninja log v6
+6	309	7640390799413660	build.ninja	fdab14e1cc81019d
+6	609	7640365838597843	CMakeFiles/TiendaEcologica_.dir/src/Venta.cpp.obj	7dc82f39ce53b188
+30	589	7640360277208891	CMakeFiles/TiendaEcologica_.dir/src/Producto.cpp.obj	4dcf2f96c5e89ed1
+7	593	7640368293238125	CMakeFiles/TiendaEcologica_.dir/src/Cliente.cpp.obj	f2920722dc166c40
+5	615	7640361091647191	CMakeFiles/TiendaEcologica_.dir/src/main.cpp.obj	597c08f766abd9e1
+7	631	7640361319953380	CMakeFiles/TiendaEcologica_.dir/src/Tienda.cpp.obj	943f799167959574
+594	724	7640368299104195	TiendaEcologica_.exe	bf3f80f335efb6bf
+27	600	7640391971740537	CMakeFiles/TiendaEcologica_.dir/src/Producto.cpp.obj	4dcf2f96c5e89ed1
+32	824	7640391971791846	CMakeFiles/TiendaEcologica_.dir/src/Cliente.cpp.obj	f2920722dc166c40
+38	894	7640391971845506	CMakeFiles/TiendaEcologica_.dir/src/Venta.cpp.obj	7dc82f39ce53b188
+23	914	7640391971694324	CMakeFiles/TiendaEcologica_.dir/src/main.cpp.obj	597c08f766abd9e1
+43	915	7640391971889563	CMakeFiles/TiendaEcologica_.dir/src/Tienda.cpp.obj	943f799167959574
+915	1058	7640391980622870	TiendaEcologica_.exe	bf3f80f335efb6bf
