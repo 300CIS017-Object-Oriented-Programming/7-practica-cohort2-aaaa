@@ -1,3 +1,0 @@
-C:/Users/ALEJANDRO/POO/TiendaEcologica/cmake-build-debug/CMakeFiles/TiendaEcologica_.dir
-C:/Users/ALEJANDRO/POO/TiendaEcologica/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/ALEJANDRO/POO/TiendaEcologica/cmake-build-debug/CMakeFiles/rebuild_cache.dir

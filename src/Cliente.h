@@ -3,7 +3,8 @@
 
 #include <string>
 #include <vector>
-#include "Venta.h"
+#include "Venta.h"  // Asegurar que se incluye Venta.h
+
 using namespace std;
 
 class Cliente {
@@ -11,10 +12,11 @@ private:
     int id;
     string nombre;
     vector<Venta*> compras;
+
 public:
     Cliente(int id, string nombre);
     void agregarCompra(Venta* venta);
     void mostrarHistorialCompras();
 };
 
-#endif
+#endif // CLIENTE_H

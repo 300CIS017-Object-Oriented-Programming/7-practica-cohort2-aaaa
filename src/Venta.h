@@ -2,22 +2,26 @@
 #define VENTA_H
 
 #include <vector>
-#include <utility>
-#include "Producto.h"
+#include "Producto.h"  // Necesitamos usar la clase Producto
+
 using namespace std;
 
-class Cliente;
+class Cliente; // Para que no haya errores de referencia circular
 
 class Venta {
 private:
-    int id;
-    Cliente* cliente;
-    vector<pair<Producto*, int>> productosVendidos;
+    int id;  // Identificación de la venta
+    Cliente* cliente;  // Cliente que hizo la compra
+    vector<pair<Producto*, int>> listaDeProductos; // Lista de productos y cantidades
+
 public:
-    Venta(int id, Cliente* cliente);
-    void agregarProductoVendido(Producto* producto, int cantidad);
-    float calcularTotal();
-    void mostrarDetalleVenta();
+    Venta(int id, Cliente* cliente);  // Constructor
+
+    void agregarProductoVendido(Producto* producto, int cantidad); // Agregar producto a la venta
+
+    float calcularTotal(); // Método para calcular el total de la venta
+
+    void mostrarDetalleVenta(); // Muestra información de la venta
 };
 
 #endif
