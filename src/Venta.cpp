@@ -29,4 +29,25 @@ float Venta::calcularTotal() {
     return total; // Devolvemos el total de la venta
 }
 
+// Método que muestra los detalles de la venta
+void Venta::mostrarDetalleVenta() {
+    cout << "==========================" << endl;
+    cout << "ID de la Venta: " << id << endl;
+    cout << "Cliente: " << cliente->getNombre() << endl;
+    cout << "Productos Vendidos:" << endl;
+
+    // Recorremos la lista de productos vendidos
+    for (int i = 0; i < listaDeProductos.size(); i++) {
+        Producto* producto = listaDeProductos[i].first; // Obtenemos el producto
+        int cantidad = listaDeProductos[i].second; // Obtenemos la cantidad
+
+        // Mostramos la información del producto vendido
+        cout << "- " << producto->getNombre()
+             << " (x" << cantidad << ")"
+             << " - Precio unitario: $" << producto->getPrecio()
+             << " - Total: $" << (producto->getPrecio() * cantidad)
+             << endl;
+    }
+    cout << "==========================" << endl;
+}
 
