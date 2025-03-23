@@ -12,6 +12,7 @@ private:
     vector<Producto*> productos;
     vector<Cliente*> clientes;
     vector<Venta*> ventas;
+
 public:
     void agregarProducto(string codigo, string nombre, float precio, int stockInicial);
     void registrarVenta(int idCliente);
@@ -21,6 +22,9 @@ public:
     void listarProductos();
     void mostrarVentas();
     float calcularValorInventario();
+
+    // Destructor para liberar memoria
+    ~Tienda();
 };
 
 #endif

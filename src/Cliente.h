@@ -15,8 +15,13 @@ private:
 
 public:
     Cliente(int id, string nombre);
+    ~Cliente(); // Destructor para liberar memoria de las compras
     void agregarCompra(Venta* venta);
     void mostrarHistorialCompras();
+
+    // Métodos necesarios para evitar errores
+    int getId();       // Devuelve el ID del cliente
+    string getNombre(); // Devuelve el nombre del cliente
 };
 
 #endif // CLIENTE_H

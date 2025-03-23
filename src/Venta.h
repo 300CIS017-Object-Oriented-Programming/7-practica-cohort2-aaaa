@@ -16,11 +16,10 @@ private:
 
 public:
     Venta(int id, Cliente* cliente);  // Constructor
+    ~Venta();  // Destructor para limpiar la lista de productos vendidos
 
     void agregarProductoVendido(Producto* producto, int cantidad); // Agregar producto a la venta
-
     float calcularTotal(); // Método para calcular el total de la venta
-
     void mostrarDetalleVenta(); // Muestra información de la venta
 };
 

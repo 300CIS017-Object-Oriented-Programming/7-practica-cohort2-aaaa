@@ -3,6 +3,19 @@
 
 using namespace std;
 
+// Destructor para liberar memoria de productos, clientes y ventas
+Tienda::~Tienda() {
+    for (int i = 0; i < productos.size(); i++) {
+        delete productos[i]; // Liberar memoria de productos
+    }
+    for (int i = 0; i < clientes.size(); i++) {
+        delete clientes[i]; // Liberar memoria de clientes
+    }
+    for (int i = 0; i < ventas.size(); i++) {
+        delete ventas[i]; // Liberar memoria de ventas
+    }
+}
+
 // Agrega un nuevo producto a la tienda
 void Tienda::agregarProducto(string codigo, string nombre, float precio, int stockInicial) {
     productos.push_back(new Producto(codigo, nombre, precio, stockInicial));

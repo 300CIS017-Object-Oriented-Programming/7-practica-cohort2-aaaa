@@ -10,6 +10,11 @@ Venta::Venta(int id, Cliente* cliente) {
     this->cliente = cliente;
 }
 
+// Destructor para liberar memoria de los productos vendidos
+Venta::~Venta() {
+    listaDeProductos.clear(); // Limpiamos la lista de productos vendidos
+}
+
 // Método para agregar productos a la venta
 void Venta::agregarProductoVendido(Producto* producto, int cantidad) {
     listaDeProductos.push_back(make_pair(producto, cantidad));
